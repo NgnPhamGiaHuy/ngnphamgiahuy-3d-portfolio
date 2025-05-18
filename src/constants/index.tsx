@@ -263,4 +263,25 @@ const SOCIAL_IMGS: SocialLink[] = [
     },
 ];
 
-export { WORDS, ABILITIES, LOGO_ICONS_LIST, COUNTER_ITEMS, EXP_CARDS, EXP_LOGOS, TESTIMONIALS, SOCIAL_IMGS, TECH_STACK_ICONS, TECH_STACK_IMGS, NAV_LINKS };
+const DEFAULT_PROJECTS = [
+    {
+        id: "project1",
+        title: "Lorem",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        imagePath: "/images/project1.png",
+    },
+    {
+        id: "project2",
+        title: "Lorem",
+        imagePath: "/images/project2.png",
+        bgColor: "#ffefdb",
+    },
+    {
+        id: "project3",
+        title: "Lorem",
+        imagePath: "/images/project3.png",
+        bgColor: "#ffe7eb",
+    },
+];
+
+export { WORDS, ABILITIES, LOGO_ICONS_LIST, COUNTER_ITEMS, EXP_CARDS, EXP_LOGOS, TESTIMONIALS, SOCIAL_IMGS, TECH_STACK_ICONS, TECH_STACK_IMGS, NAV_LINKS, DEFAULT_PROJECTS };
