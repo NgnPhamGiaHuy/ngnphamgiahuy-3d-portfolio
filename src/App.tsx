@@ -4,6 +4,7 @@ import Hero from "./sections/Hero.tsx";
 import Showcase from "./sections/Showcase.tsx";
 import NavBar from "./components/NavBar.tsx";
 import Logo from "./sections/Logo.tsx";
+import Feature from "./sections/Feature.tsx";
 
 const App = (): React.ReactElement => {
     return (
@@ -12,6 +13,7 @@ const App = (): React.ReactElement => {
             <Hero />
             <Showcase />
             <Logo />
+            <Feature />
         </>
     );
 };
