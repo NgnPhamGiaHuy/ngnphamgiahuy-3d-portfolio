@@ -40,36 +40,47 @@ const COUNTER_ITEMS: CounterItem[] = [
 const LOGO_ICONS_LIST: LogoIcon[] = [
     {
         imagePath: "/images/logos/company-logo-1.png",
+        name: "lorem",
     },
     {
         imagePath: "/images/logos/company-logo-2.png",
+        name: "lorem",
     },
     {
         imagePath: "/images/logos/company-logo-3.png",
+        name: "lorem",
     },
     {
         imagePath: "/images/logos/company-logo-4.png",
+        name: "lorem",
     },
     {
         imagePath: "/images/logos/company-logo-5.png",
+        name: "lorem",
     },
     {
         imagePath: "/images/logos/company-logo-6.png",
+        name: "lorem",
     },
     {
         imagePath: "/images/logos/company-logo-7.png",
+        name: "lorem",
     },
     {
         imagePath: "/images/logos/company-logo-8.png",
+        name: "lorem",
     },
     {
         imagePath: "/images/logos/company-logo-9.png",
+        name: "lorem",
     },
     {
         imagePath: "/images/logos/company-logo-10.png",
+        name: "lorem",
     },
     {
         imagePath: "/images/logos/company-logo-11.png",
+        name: "lorem",
     },
 ];
 

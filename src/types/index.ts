@@ -26,6 +26,7 @@ export interface CounterItem {
 
 // Logo icon type
 export interface LogoIcon {
+    name: string;
     imagePath: string;
 }
 
