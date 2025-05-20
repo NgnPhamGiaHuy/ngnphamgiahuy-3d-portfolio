@@ -8,6 +8,8 @@ import Feature from "./sections/Feature.tsx";
 import Experience from "./sections/Experience.tsx";
 import TechStack from "./sections/TechStack.tsx";
 import Testimonials from "./sections/Testimonials.tsx";
+import Contact from "./sections/Contact.tsx";
+import Footer from "./sections/Footer.tsx";
 
 const App: React.FC = (): React.ReactElement => {
     return (
@@ -20,6 +22,8 @@ const App: React.FC = (): React.ReactElement => {
             <Experience />
             <TechStack />
             <Testimonials />
+            <Contact />
+            <Footer />
         </>
     );
 };
