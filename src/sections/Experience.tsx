@@ -62,7 +62,7 @@ const Experience = (): React.ReactElement => {
                         { EXP_CARDS.map((card, index) => (
                             <div key={index} className={"exp-card-wrapper"}>
                                 <div className={"xl:w-1/3"}>
-                                    <GlowCard card={card} index={index}>
+                                    <GlowCard review={card.review} index={index}>
                                         <div>
                                             <img src={card.imagePath} alt={card.title} />
                                         </div>

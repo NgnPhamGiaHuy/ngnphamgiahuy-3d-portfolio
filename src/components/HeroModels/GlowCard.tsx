@@ -1,14 +1,12 @@
 import React, { useRef } from "react";
 
-import type { ExpCard } from "../../types";
-
 interface GlowCardProps {
-    card: ExpCard;
     index: number;
+    review: string;
     children: React.ReactNode;
 }
 
-const GlowCard: React.FC<GlowCardProps> = ({ card, index, children }): React.ReactElement => {
+const GlowCard: React.FC<GlowCardProps> = ({ review, index, children }): React.ReactElement => {
     const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
     const handleMouseMove = (index: number) => (e: React.MouseEvent<HTMLDivElement>) => {
@@ -42,7 +40,7 @@ const GlowCard: React.FC<GlowCardProps> = ({ card, index, children }): React.Rea
                 )) }
             </div>
             <div className={"mb-5"}>
-                <p className={"text-lg text-white-50"}>{ card.review }</p>
+                <p className={"text-lg text-white-50"}>{ review }</p>
             </div>
             { children }
         </div>

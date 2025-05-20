@@ -7,6 +7,7 @@ import Logo from "./sections/Logo.tsx";
 import Feature from "./sections/Feature.tsx";
 import Experience from "./sections/Experience.tsx";
 import TechStack from "./sections/TechStack.tsx";
+import Testimonials from "./sections/Testimonials.tsx";
 
 const App: React.FC = (): React.ReactElement => {
     return (
@@ -18,6 +19,7 @@ const App: React.FC = (): React.ReactElement => {
             <Feature />
             <Experience />
             <TechStack />
+            <Testimonials />
         </>
     );
 };
