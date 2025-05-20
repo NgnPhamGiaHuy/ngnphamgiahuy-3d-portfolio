@@ -2,7 +2,7 @@ import React from "react";
 
 import type { ButtonProps } from "../types";
 
-const Button = ({ id, text, className }: ButtonProps): React.ReactElement => {
+const Button: React.FC<ButtonProps> = ({ id, text, className }): React.ReactElement => {
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>): void => {
         e.preventDefault();
 
@@ -23,7 +23,7 @@ const Button = ({ id, text, className }: ButtonProps): React.ReactElement => {
         <a onClick={handleClick} className={`${className ?? ''} cta-wrapper`}>
             <div className={"cta-button group"}>
                 <div className={"bg-circle"} />
-                <p className={"text"}>{text}</p>
+                <p className={"text"}>{ text }</p>
                 <div className={"arrow-wrapper"}>
                     <img src={"/images/arrow-down.svg"} alt={"arrow"} />
                 </div>

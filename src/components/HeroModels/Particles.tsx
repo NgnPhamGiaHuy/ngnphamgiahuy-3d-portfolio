@@ -8,7 +8,7 @@ interface ParticlesProps {
     count?: number;
 }
 
-const Particles: React.FC<ParticlesProps> = ({ count = 200 }) => {
+const Particles: React.FC<ParticlesProps> = ({ count = 200 }): React.ReactElement => {
     const mesh = useRef<THREE.Points>(null);
 
     const particles = useMemo<Particle[]>(() => {

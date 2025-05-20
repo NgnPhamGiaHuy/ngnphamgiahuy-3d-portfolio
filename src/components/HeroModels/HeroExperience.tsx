@@ -6,7 +6,7 @@ import { OrbitControls } from "@react-three/drei";
 import Particles from "./Particles.tsx";
 import { CozyDayModel } from "./Cozy_day.tsx";
 
-const HeroExperience = (): React.ReactElement => {
+const HeroExperience: React.FC = (): React.ReactElement => {
     const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
     const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
 

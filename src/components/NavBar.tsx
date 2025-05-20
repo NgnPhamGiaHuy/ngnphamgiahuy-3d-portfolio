@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { NAV_LINKS } from "../constants";
 
-const NavBar: React.FC = () => {
+const NavBar: React.FC = (): React.ReactElement => {
     const [scrolled, setScrolled] = useState<boolean>(false);
 
     useEffect(() => {
@@ -26,14 +26,14 @@ const NavBar: React.FC = () => {
                 </a>
                 <nav className={"desktop"}>
                     <ul>
-                        {NAV_LINKS.map((item, index) => (
+                        { NAV_LINKS.map((item, index) => (
                             <li key={index} className={"group"}>
                                 <a href={item.link}>
                                     <span>{ item.name }</span>
                                     <span className={"underline"}></span>
                                 </a>
                             </li>
-                        ))}
+                        )) }
                     </ul>
                 </nav>
                 <a href={"#contact"} className={"contact-btn group"}>

@@ -4,12 +4,13 @@ Command: npx gltfjsx@6.5.3 cozy_day.glb --types
 Author: Omar Faruq Tawsif (https://sketchfab.com/omarfaruqtawsif32)
 License: CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 Source: https://sketchfab.com/3d-models/cozy-day-38e5573d832d44279e601687c509f1f0
-Title: Cozy Day
+TitleHeader: Cozy Day
 */
 
 import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import type { GLTF } from "three-stdlib";
+import React from "react";
 
 type GLTFResult = GLTF & {
     nodes: {
@@ -394,9 +395,8 @@ type GLTFResult = GLTF & {
     animations: GLTFAction[]
 };
 
-export function CozyDayModel(props: JSX.IntrinsicElements["group"]) {
+export const CozyDayModel: React.FC<JSX.IntrinsicElements["group"]> = (props): React.ReactElement => {
     const { nodes, materials } = useGLTF("/models/cozy_day.glb") as GLTFResult;
-
     return (
         <group {...props} dispose={null}>
             <group position={[-0.153, 0.878, -1.464]} scale={[1, 0.898, 1]}>
@@ -1056,7 +1056,7 @@ export function CozyDayModel(props: JSX.IntrinsicElements["group"]) {
             <mesh geometry={nodes.Object_582.geometry} material={materials.outline_culled} position={[2.04, 0.16, 1.103]} rotation={[-2.381, -0.926, -1.998]} />
             <mesh geometry={nodes.Object_584.geometry} material={materials.outline_culled} position={[2.358, 0.365, 0.09]} rotation={[0.061, 0.032, 0.078]} scale={1.058} />
         </group>
-    )
+    );
 };
 
 useGLTF.preload("/models/cozy_day.glb");

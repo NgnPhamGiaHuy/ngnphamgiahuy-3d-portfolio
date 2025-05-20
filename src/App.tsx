@@ -5,8 +5,9 @@ import Showcase from "./sections/Showcase.tsx";
 import NavBar from "./components/NavBar.tsx";
 import Logo from "./sections/Logo.tsx";
 import Feature from "./sections/Feature.tsx";
+import Experience from "./sections/Experience.tsx";
 
-const App = (): React.ReactElement => {
+const App: React.FC = (): React.ReactElement => {
     return (
         <>
             <NavBar />
@@ -14,6 +15,7 @@ const App = (): React.ReactElement => {
             <Showcase />
             <Logo />
             <Feature />
+            <Experience />
         </>
     );
 };

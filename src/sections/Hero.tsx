@@ -7,7 +7,7 @@ import Button from "../components/Button.tsx";
 import AnimatedCounter from "../components/AnimatedCounter.tsx";
 import HeroExperience from "../components/HeroModels/HeroExperience.tsx";
 
-const Hero = (): React.ReactElement => {
+const Hero: React.FC = (): React.ReactElement => {
     useGSAP(() => {
         gsap.fromTo(".hero-text h1 span", {
             y: 50,

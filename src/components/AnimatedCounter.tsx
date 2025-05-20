@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 
 import { COUNTER_ITEMS } from "../constants";
 
-const AnimatedCounter = (): React.ReactElement => {
+const AnimatedCounter: React.FC = (): React.ReactElement => {
     return (
         <div id={"counter"} className={"xl:mt-0 mt-32 padding-x-lg"}>
             <div className={"mx-auto grid-4-cols"}>

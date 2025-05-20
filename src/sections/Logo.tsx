@@ -7,7 +7,7 @@ interface LogoIconProps {
     icon: LogoIconType;
 }
 
-const LogoIcon: React.FC<LogoIconProps> = ({ icon }) => {
+const LogoIcon: React.FC<LogoIconProps> = ({ icon }): React.ReactElement => {
     return (
         <div className={"flex-none flex-center marquee-item"}>
             <img src={icon.imagePath} alt={icon.name} />
@@ -15,7 +15,7 @@ const LogoIcon: React.FC<LogoIconProps> = ({ icon }) => {
     )
 }
 
-const Logo: React.FC = () => {
+const Logo: React.FC = (): React.ReactElement => {
     return (
         <div className={"md:my-20 my-10 relative"}>
             <div className={"gradient-edge"}></div>

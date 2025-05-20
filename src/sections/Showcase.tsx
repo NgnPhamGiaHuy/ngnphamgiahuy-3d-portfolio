@@ -19,7 +19,7 @@ interface ShowcaseProps {
     projects?: Project[];
 }
 
-const Showcase = ({ projects = DEFAULT_PROJECTS }: ShowcaseProps): React.ReactElement => {
+const Showcase: React.FC<ShowcaseProps> = ({ projects = DEFAULT_PROJECTS }): React.ReactElement => {
     const sectionRef = useRef<HTMLDivElement>(null);
     const projectRefs = projects.map(() => useRef<HTMLDivElement>(null));
 
@@ -73,7 +73,7 @@ const Showcase = ({ projects = DEFAULT_PROJECTS }: ShowcaseProps): React.ReactEl
                                 <div className={`image-wrapper ${project.bgColor ? `bg-[${project.bgColor}]` : ''}`}>
                                     <img src={project.imagePath} alt={project.id} />
                                 </div>
-                                <h2>{project.title}</h2>
+                                <h2>{ project.title }</h2>
                             </div>
                         )) }
                     </div>
