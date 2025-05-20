@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar.tsx";
 import Logo from "./sections/Logo.tsx";
 import Feature from "./sections/Feature.tsx";
 import Experience from "./sections/Experience.tsx";
+import TechStack from "./sections/TechStack.tsx";
 
 const App: React.FC = (): React.ReactElement => {
     return (
@@ -16,6 +17,7 @@ const App: React.FC = (): React.ReactElement => {
             <Logo />
             <Feature />
             <Experience />
+            <TechStack />
         </>
     );
 };
