@@ -8,11 +8,11 @@ const AnimatedCounter: React.FC = (): React.ReactElement => {
         <div id={"counter"} className={"xl:mt-0 mt-32 padding-x-lg"}>
             <div className={"mx-auto grid-4-cols"}>
                 { COUNTER_ITEMS.map((item, index) => (
-                    <div key={index} className={"p-10 flex flex-col justify-center bg-zinc-900 rounded-lg"}>
-                        <div className={"mb-2 counter-number text-5xl text-white font-bold"}>
+                    <div key={index} className={"p-10 flex flex-col justify-center bg-surface rounded-lg"}>
+                        <div className={"mb-2 counter-number text-5xl text-text-surface font-bold"}>
                             <CountUp suffix={item.suffix} end={item.value} />
                         </div>
-                        <div className={"text-white-50 text-lg"}>
+                        <div className={"text-text-subtle-surface text-lg"}>
                             { item.label }
                         </div>
                     </div>

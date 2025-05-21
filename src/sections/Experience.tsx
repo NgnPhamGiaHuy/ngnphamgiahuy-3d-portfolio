@@ -55,7 +55,7 @@ const Experience = (): React.ReactElement => {
 
     return (
         <section id={"experience"} className={"md:mt-40 mt-20 xl:px-0 flex-center section-padding"}>
-            <div className={"w-full h-full md:px-20 px-5"}>
+            <div className={"w-full h-full md:px-44 px-5"}>
                 <TitleHeader title={"Professional Work Experience"} sub={"My Career Overview"} />
                 <div className={"mt-32 relative"}>
                     <div className={"xl:space-y-32 space-y-10 relative z-50"}>
@@ -79,10 +79,10 @@ const Experience = (): React.ReactElement => {
                                                 <img src={card.logoPath} alt={"logo"} />
                                             </div>
                                             <div>
-                                                <h2 className={"text-3xl font-semibold"}>{card.title}</h2>
-                                                <p className={"my-5 text-white-50"}>🗓️&nbsp;{card.date}</p>
-                                                <p className={"text-[#839cb5] italic"}>Responsibilities</p>
-                                                <ul className={"ms-5 mt-5 flex flex-col text-white-50 list-disc gap-5"}>
+                                                <h2 className={"text-3xl text-text font-semibold"}>{card.title}</h2>
+                                                <p className={"my-5 text-text-subtle"}>🗓️&nbsp;{card.date}</p>
+                                                <p className={"text-text-surface italic"}>Responsibilities: </p>
+                                                <ul className={"ms-5 mt-5 flex flex-col text-text-subtle list-disc gap-5"}>
                                                     { card.responsibilities.map((item, index) => (
                                                         <li key={index} className={"text-lg"}>
                                                             {item}

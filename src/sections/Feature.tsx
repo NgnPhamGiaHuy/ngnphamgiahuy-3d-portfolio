@@ -13,8 +13,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ ability }): React.ReactElemen
             <div className={"size-14 flex flex-center rounded-full"}>
                 <img src={ability.imagePath} alt={ability.title} />
             </div>
-            <h3 className={"mt-2 text-2xl text-white font-semibold"}>{ability.title}</h3>
-            <p className={"text-white-50 text-lg"}>{ability.desc}</p>
+            <h3 className={"mt-2 text-2xl text-text-surface font-semibold"}>{ability.title}</h3>
+            <p className={"text-text-subtle-surface text-lg text-justify"}>{ability.desc}</p>
         </div>
     );
 };

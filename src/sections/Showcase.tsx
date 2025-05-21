@@ -62,7 +62,7 @@ const Showcase: React.FC<ShowcaseProps> = ({ projects = DEFAULT_PROJECTS }): Rea
                         </div>
                         <div className={"text-content"}>
                             <h2>{ projects[0].title }</h2>
-                            <p className={"md:text-xl text-white-50"}>
+                            <p className={"md:text-xl text-text text-justify"}>
                                 { projects[0].description }
                             </p>
                         </div>
@@ -70,7 +70,7 @@ const Showcase: React.FC<ShowcaseProps> = ({ projects = DEFAULT_PROJECTS }): Rea
                     <div className={"project-list-wrapper overflow-hidden"}>
                         { projects.slice(1).map((project, index) => (
                             <div key={project.id} className={"project"} ref={projectRefs[index + 1]}>
-                                <div className={`image-wrapper ${project.bgColor ? `bg-[${project.bgColor}]` : ''}`}>
+                                <div className={`image-wrapper ${project.bgColor ? project.bgColor : ''}`}>
                                     <img src={project.imagePath} alt={project.id} />
                                 </div>
                                 <h2>{ project.title }</h2>

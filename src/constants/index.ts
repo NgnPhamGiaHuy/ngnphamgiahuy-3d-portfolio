@@ -20,21 +20,21 @@ const NAV_LINKS: NavLink[] = [
 ];
 
 const WORDS: WordItem[] = [
-    { text: "Ideas", imagePath: "/images/ideas.svg" },
-    { text: "Concepts", imagePath: "/images/concepts.svg" },
-    { text: "Designs", imagePath: "/images/designs.svg" },
-    { text: "Code", imagePath: "/images/code.svg" },
-    { text: "Ideas", imagePath: "/images/ideas.svg" },
-    { text: "Concepts", imagePath: "/images/concepts.svg" },
-    { text: "Designs", imagePath: "/images/designs.svg" },
-    { text: "Code", imagePath: "/images/code.svg" },
+    { text: "Interfaces", imagePath: "/images/interfaces.svg" },
+    { text: "Backends", imagePath: "/images/backends.svg" },
+    { text: "Pipelines", imagePath: "/images/pipelines.svg" },
+    { text: "Prompts", imagePath: "/images/prompts.svg" },
+    { text: "Dashboards", imagePath: "/images/dashboards.svg" },
+    { text: "Scrapers", imagePath: "/images/scrapers.svg" },
+    { text: "Systems", imagePath: "/images/systems.svg" },
+    { text: "Automation", imagePath: "/images/automation.svg" },
 ];
 
 const COUNTER_ITEMS: CounterItem[] = [
-    { value: 15, suffix: "+", label: "Years of Experience" },
-    { value: 200, suffix: "+", label: "Satisfied Clients" },
-    { value: 108, suffix: "+", label: "Completed Projects" },
-    { value: 90, suffix: "%", label: "Client Retention Rate" },
+    { value: 1, suffix: "+", label: "Years of Experience" },
+    { value: 3, suffix: "+", label: "Personal Projects" },
+    { value: 2, suffix: "", label: "Internships" },
+    { value: 100, suffix: "%", label: "Commitment to Learning" },
 ];
 
 const LOGO_ICONS_LIST: LogoIcon[] = [
@@ -86,19 +86,19 @@ const LOGO_ICONS_LIST: LogoIcon[] = [
 
 const ABILITIES: Ability[] = [
     {
-        imagePath: "/images/seo.png",
-        title: "Quality Focus",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        imagePath: "/images/frontend-dev.png",
+        title: "Pixel-Perfect Development",
+        desc: "Skilled in translating Figma prototypes into responsive UIs using HTML, CSS, React, and Tailwind CSS—ensuring every detail matches the design.",
     },
     {
-        imagePath: "/images/chat.png",
-        title: "Reliable Communication",
-        desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        imagePath: "/images/api-integration.png",
+        title: "Robust Backend Integration",
+        desc: "Experienced with Node.js, Express, and MongoDB to build scalable APIs and integrate real-time features like messaging, notifications, and media streaming.",
     },
     {
-        imagePath: "/images/time.png",
-        title: "On-Time Delivery",
-        desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        imagePath: "/images/data-ai.png",
+        title: "Data & AI Savvy",
+        desc: "From building scrapers and pipelines to crafting effective prompts, I leverage Python, async tools, and AI foundations to deliver intelligent automation.",
     },
 ];
 
@@ -276,22 +276,24 @@ const SOCIAL_IMGS: SocialLink[] = [
 
 const DEFAULT_PROJECTS = [
     {
-        id: "project1",
-        title: "Lorem",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        id: "recial",
+        title: "Recial",
+        description: "Recial is a social network for environmental collaboration, built with a scalable backend using Express.js and Mongoose. It features a real-time feed with ReactJS, Redux, and SWR for instant content updates. I implemented secure authentication via NextAuth and JWT, and integrated Firebase for video upload and streaming. Real-time messaging and notifications were enabled using WebSockets and Node.js.",
         imagePath: "/images/project1.png",
     },
     {
-        id: "project2",
-        title: "Lorem",
+        id: "storysells",
+        title: "Storysells",
+        description: "An e-commerce web app for books, featuring an optimized MongoDB query structure for fast search results and a mobile-responsive UI. Developed the shopping cart and user flow with React, styled it with vanilla CSS and Tailwind, and built backend logic with Node.js and Express.",
         imagePath: "/images/project2.png",
-        bgColor: "#ffefdb",
+        bgColor: "bg-accent/50",
     },
     {
-        id: "project3",
-        title: "Lorem",
+        id: "media-crawler",
+        title: "Media Crawler",
+        description: "A Python-based asynchronous web scraper designed to extract images, audio, and video content. Implemented a depth-based filtering system, session-based cache with auto-cleanup, and a REST API using Flask that supports media search, metadata viewing, and direct downloads.",
         imagePath: "/images/project3.png",
-        bgColor: "#ffe7eb",
+        bgColor: "bg-warning-dark/50",
     },
 ];
 

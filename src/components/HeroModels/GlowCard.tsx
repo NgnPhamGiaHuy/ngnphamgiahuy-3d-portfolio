@@ -36,11 +36,11 @@ const GlowCard: React.FC<GlowCardProps> = ({ review, index, children }): React.R
             <div className={"glow"} />
             <div className={"mb-5 flex items-center gap-1"}>
                 { Array.from({ length: 5 }, (_, i) => (
-                    <img src={"/images/star.png"} key={i} alt={"star"} className={"size-5"} />
+                    <img src={"/images/favourite.png"} key={i} alt={"star"} className={"size-5"} />
                 )) }
             </div>
             <div className={"mb-5"}>
-                <p className={"text-lg text-white-50"}>{ review }</p>
+                <p className={"text-lg text-text-surface text-justify"}>{ review }</p>
             </div>
             { children }
         </div>

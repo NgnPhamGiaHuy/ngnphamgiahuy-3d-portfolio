@@ -27,7 +27,7 @@ const Hero: React.FC = (): React.ReactElement => {
                 <img src={"/images/bg.png"} alt={"background"} />
             </div>
             <div className={"hero-layout"}>
-                <header className={"md:w-full w-screen md:px-20 px-5 flex flex-col justify-center"}>
+                <header className={"md:w-full w-screen md:px-44 px-5 flex flex-col justify-center"}>
                     <div className={"flex flex-col gap-7"}>
                         <div className={"hero-text"}>
                             <h1>
@@ -38,8 +38,8 @@ const Hero: React.FC = (): React.ReactElement => {
                                     <span className={"wrapper"}>
                                         { WORDS.map((word, index) => (
                                             <span key={index} className={"pb-2 flex items-center md:gap-3 gap-1"}>
-                                                <img src={word.imagePath} alt={word.text} className={"xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"} />
-                                                <span>{word.text}</span>
+                                                <img src={word.imagePath} alt={word.text} className={"xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-xl bg-surface"} />
+                                                <span>{ word.text }</span>
                                             </span>
                                         )) }
                                     </span>
@@ -54,7 +54,7 @@ const Hero: React.FC = (): React.ReactElement => {
                                 </span>
                             </h1>
                         </div>
-                        <p className={"md:text-xl text-white-50 pointer-events-none relative z-10"}>Hi, I'm NgnPhamGiaHuy, a full-stack developer</p>
+                        <p className={"md:text-xl text-text pointer-events-none relative z-10"}>Hi, I'm NgnPhamGiaHuy, a fresher full-stack developer</p>
                         <Button id={"counter"} text={"See my Work"} className={"md:w-80 w-60 md:h-16 h-12"} />
                     </div>
                 </header>

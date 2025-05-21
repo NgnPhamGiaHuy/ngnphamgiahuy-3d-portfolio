@@ -71,7 +71,7 @@ const Contact: React.FC = (): React.ReactElement => {
                                     <div className={"cta-button group"}>
                                         <div className={"bg-circle"} />
                                         <p className={"text"}>
-                                            {loading ? "Sending..." : "Send Message"}
+                                            { loading ? "Sending..." : "Send Message" }
                                         </p>
                                         <div className={"arrow-wrapper"}>
                                             <img src={"/images/arrow-down.svg"} alt={"arrow"} />
